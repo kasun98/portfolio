@@ -50,7 +50,9 @@
 									Predicting future prices in the volatile world of cryptocurrency has always been a challenging endeavor. Traditional models frequently rely on LSTM and RNN algorithms, employing techniques such as Z-score normalization and Min-Max normalization. However, these methods often fall short as they fail to adapt to the market’s breaking of previous minimums or maximums. Instead of predicting exact prices, I have developed a different approach through my project, NeuronBit, which aims to forecast the daily market direction of Bitcoin.
 								</p>
 								<a href="https://github.com/kasun98/NeuronBitv3" class="icon brands fa-github"><span class="label">GitHub</span></a>
-								<strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/NeuronBitv3" target="_blank">GitHub Repository</a></strong>
+								<strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/NeuronBitv3" target="_blank">GitHub Repository</a></strong><br>
+								<a href="https://github.com/kasun98/NeuronBit_crewAI" class="icon brands fa-github"><span class="label">GitHub2</span></a>
+								<strong><a style="color: rgb(111, 0, 255);" href="https://github.com/kasun98/NeuronBit_crewAI" target="_blank">GitHub Repository - crewAI updated</a></strong>
 
 
 								</header>
@@ -58,7 +60,7 @@
 								<h2>The Concept</h2>
 								<p>
 
-									NeuronBit leverages a convolutional neural network (CNN) with leaky ReLU activation and an intricate 14-layer architecture. Unlike conventional methods, NeuronBit predicts whether the next day's opening price will be higher or lower than today’s opening price. This directional prediction model provides traders with valuable insights into market trends, helping them make informed decisions.</p>
+									NeuronBit leverages a Deep neural network (DNN) with leaky ReLU activation and an intricate 14-layer architecture. Unlike conventional methods, NeuronBit predicts whether the next day's opening price will be higher or lower than today’s opening price. This directional prediction model provides traders with valuable insights into market trends, helping them make informed decisions.</p>
 								<div class="image main"><img src="images/fcnn.png" alt="" /></div>
 									<h2>
 									Feature Engineering and Model Development</h2>
@@ -72,15 +74,26 @@
 										<li><strong>Investpy API:</strong> For retrieving market data.</li>
 										<li><strong>Plotly and Pandas:</strong> For data visualization and manipulation.</li>
 										<li><strong>TensorFlow and Keras:</strong> For building and training the convolutional neural network.</li>
+										<li><strong>CrewAI:</strong> For analysing the market using agents, tasks and tools.</li>
+										<li><strong>Google Gemini:</strong> LLM for crewai.</li>
 										<li><strong>HTML, CSS, and JavaScript:</strong> For creating an interactive user interface.</li>
 										<li><strong>Flask:</strong> For serving the TensorFlow model to users via a web application.</li>
 									</ul>
 								</div>
 						
 								<h2>Performance and Results</h2>
-								<p>NeuronBit has demonstrated exceptional performance, achieving a 97% F1 score on the test dataset. This high level of accuracy underscores the effectiveness of the feature selection and the robustness of the CNN architecture. Users can rely on NeuronBit to provide accurate market direction predictions, giving them a strategic edge in their trading activities.</p>
+								<p>NeuronBit has demonstrated exceptional performance, achieving a 97% F1 score on the test dataset. This high level of accuracy underscores the effectiveness of the feature selection and the robustness of the DNN architecture. Users can rely on NeuronBit to provide accurate market direction predictions, giving them a strategic edge in their trading activities.</p>
 						
 								<div class="image fit"><img src="images/f1.png" alt="" /></div>
+								<h2>Gen-AI for Market Analysis (Updated)</h2>
+								<ul>
+									<li><strong>CrewAI Integration:</strong> Leveraged Crew AI in conjunction with the Google Gemini Pro LLM model to analyze the day trading market. This combination allows for deeper insights and more precise predictions.</li>
+								</ul>
+								<div class="image main"><img src="images/crew.png" alt="" /></div>
+								<ul>
+									<li><strong>Example Output:</strong> </li>
+								</ul>
+								<div class="image main"><img src="images/crew2.png" alt="" /></div>
 								<h2>Limitations and Challenges</h2>
 								<p>Despite its impressive performance, NeuronBit does have some limitations:</p>
 								<ul>
@@ -89,7 +102,7 @@
 								</ul>
 						
 								<h2>Conclusion</h2>
-								<p>NeuronBit represents a significant advancement in cryptocurrency market prediction. By focusing on market direction rather than exact prices and employing a CNN architecture without normalization, NeuronBit offers a fresh perspective on market forecasting. With its user-friendly web interface, traders can easily access reliable predictions and enhance their decision-making processes.</p>
+								<p>NeuronBit represents a significant advancement in cryptocurrency market prediction. By focusing on market direction rather than exact prices and employing a DNN architecture without normalization, NeuronBit offers a fresh perspective on market forecasting. With its user-friendly web interface, traders can easily access reliable predictions and enhance their decision-making processes.</p>
 							
 
 
