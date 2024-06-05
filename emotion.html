@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a>Emotions</a></li>
+							
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kasundewaka" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/kasun98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.facebook.com/kasun.dewaka.ii" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">June 04, 2024</span>
+									<h1>Emotion Analysis</h1>
+									<p>An Innovative Approach to Detecting Emotions in Real-Time Video</p><br>
+									Recognizing emotions in real-time has vast applications ranging from entertainment to mental health analysis. Utilizing the power of YOLOv8, Roboflow for dataset annotation, and Google Colab for model training, I developed a robust project to detect and display cumulative emotions from frames of any video or live webcam feed.
+								</p>
+								<a href="https://github.com/kasun98/emotion" class="icon brands fa-github"><span class="label">GitHub</span></a>
+								<strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/emotion" target="_blank">GitHub Repository</a></strong><br>
+								
+
+								</header>
+							
+								<video width="640" height="360" controls autoplay loop muted poster="poster.jpg">
+									<source src="images/yolo.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h2>The Concept</h2>
+								<p>
+									The core idea is to leverage YOLOv8 for detecting emotions in real-time. By training a custom model on a carefully annotated dataset, the project aims to identify various emotions and display a cumulative pie chart of these emotions in live video feeds.
+								</p>
+								<div class="image main"><img src="images/emotion_chart.png" alt="" /></div>
+								<h2>Dataset and Model Development</h2>
+								<p>
+									I used Roboflow to annotate a dataset of facial expressions, covering a wide range of emotions. The dataset was then used to train a YOLOv8 model on Google Colab. The training process involved fine-tuning the model over 100 epochs.
+								</p>
+								<div class="image main"><img src="images/robo.png" alt="" /></div>
+								
+								<div class="highlight">
+									<h3>Development Stack</h3>
+									<ul>
+										<li><strong>Ultralytics YOLOV8:</strong> For training the emotion detection model.</li>
+										<li><strong>Ultralytics Analytics:</strong> For rendering the realtime results.</li>
+										<li><strong>Roboflow:</strong> For dataset annotation and management.</li>
+										<li><strong>Google Colab:</strong> For training the model on custom data.</li>
+										<li><strong>OpenCV and Matplotlib:</strong> For displaying real-time results and visualizations.</li>
+										
+									</ul>
+								</div>
+								<h2>Performance and Results</h2>
+								<p>
+									The trained model was evaluated on a validation set, demonstrating performance in accurately detecting emotions. Below are some sample results from the model predictions.
+								</p>
+								<p>Training & Validation Results :</p>
+								<div class="image main"><img src="images/trainresults.png" alt="" /></div>
+								<div class="image main"><img src="images/valresults.jpeg" alt="" /></div>
+								<div class="image fit"><img src="images/sample_results.png" alt="" /></div>
+								<h2>Real-Time Emotion Analysis</h2>
+								<ul>
+									<li><strong>Real-time Video Processing:</strong> The model processes frames from a video feed and updates a pie chart representing the distribution of detected emotions.</li>
+								</ul>
+								<div class="image main"><img src="images/pie.gif" alt="" /></div>
+								
+								<h2>Limitations and Challenges</h2>
+								<p>Despite its impressive capabilities, the project does have some limitations:</p>
+								<ul>
+									<li><strong>Dataset Quality:</strong> The accuracy of emotion detection is highly dependent on the quality and diversity of the training dataset.</li>
+									<li><strong>Real-time Performance:</strong> Processing high-resolution video in real-time requires significant computational resources.</li>
+									<li><strong>Limited Dataset:</strong> Due to the time-consuming nature of labeling, the model was trained on a limited dataset, which affected its overall performance. More extensive data collection and labeling are needed to improve the model's accuracy.</li>
+								</ul>
+								<h2>Conclusion</h2>
+								<p>
+									This project showcases the potential of combining YOLOv8 with real-time video processing to detect and analyze emotions. The resulting application can be utilized in various fields, providing valuable insights and enhancing user experience through real-time emotion recognition.
+								</p>
+
+
+
+								<p></p>
+								<div class="buttons">
+									<button class="back" onclick="history.back()">Back</button>
+									<button class="next" onclick="window.location.href='st.html'">Next</button>
+								</div>
+								</section>
+								
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+				<header id="header1">
+					<a href="index.html" class="logo">Home</a>
+					
+				</header>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
