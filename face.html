@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a>Face</a></li>
+							
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kasundewaka" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/kasun98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.facebook.com/kasun.dewaka.ii" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">June 05, 2024</span>
+									<h1>Face Detection</h1>
+									<p>Real-Time Face Detection Using Transfer Learning | TensorFlow</p>
+									<br>
+									Face detection is a critical technology in various applications ranging from security systems to personal devices. Utilizing the power of deep learning, I developed a robust face detection model using VGG16, TensorFlow, OpenCV, and several other tools to achieve high accuracy and real-time performance.
+									<br><br>
+									<a href="https://github.com/kasun98/facedetection" class="icon brands fa-github"><span class="label">GitHub</span></a>
+									<strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/facedetection" target="_blank">GitHub Repository</a></strong>
+								</header>
+								<div class="image main"><img src="" alt="" /></div>
+								<h2>The Concept</h2>
+								<p>
+									The face detection model leverages the VGG16 network, which is well-known for its excellent performance in image recognition tasks. By fine-tuning this pre-trained network, I adapted it to detect faces in real-time. The model not only identifies the presence of faces but also provides precise bounding boxes around detected faces, making it suitable for various practical applications.
+								</p>
+								<div class="image main"><img src="" alt="" /></div>
+								<h2>Data Collection and Annotation</h2>
+								<p>
+									Data collection is a crucial part of developing a face detection model. Using OpenCV, I captured images from a webcam and stored them in a structured format. To annotate these images, I employed LabelMe, a powerful tool that allows for precise labeling of facial features and bounding boxes. This annotated dataset served as the foundation for training the model.
+								</p>
+								<div class="image main"><img src="" alt="" /></div>
+								<h2>Data Augmentation</h2>
+								<p>
+									To enhance the model's robustness, I used Albumentations, a popular library for data augmentation. This step involved applying random transformations such as cropping, flipping, and adjusting brightness and contrast to create a diverse set of training images. This process ensures that the model can generalize well to various lighting conditions and orientations.
+								</p>
+								<div class="highlight">
+									<h3>Development Stack</h3>
+									<ul>
+										<li><strong>OpenCV:</strong> For image capture and processing.</li>
+										<li><strong>LabelMe:</strong> For annotating the dataset.</li>
+										<li><strong>Albumentations:</strong> For data augmentation.</li>
+										<li><strong>TensorFlow and Keras:</strong> For building and training the VGG16-based custom model.</li>
+										<li><strong>Matplotlib:</strong> For visualizing data and model predictions.</li>
+									</ul>
+								</div>
+								<h2>Model Training and Performance</h2>
+								<p>
+									The model was trained using a combination of classification and regression losses to accurately identify faces and predict their bounding boxes. The Adam optimizer with a carefully tuned learning rate ensured efficient convergence. The training process involved monitoring various metrics to achieve optimal performance.
+								</p>
+								<div class="image fit"><img src="" alt="" /></div>
+								<h2>Real-Time Detection</h2>
+								<p>
+									One of the highlights of this project is the model's ability to perform real-time face detection. By integrating the trained model with OpenCV, I developed a real-time detection system that processes video input from a webcam and displays bounding boxes around detected faces.
+								</p>
+								<div class="image main"><img src="" alt="" /></div>
+								<h2>Limitations</h2>
+								
+								<ul>
+									<li><strong>Dataset Size:</strong> The model's accuracy can be further improved with a larger and more diverse dataset.</li>
+									<li><strong>Environmental Conditions:</strong> Extreme lighting conditions or occlusions can affect detection performance.</li>
+								</ul>
+								<h2>Conclusion</h2>
+								<p>
+									Transfer learning is a powerful technique that leverages the knowledge gained from pre-trained models like VGG16 to solve new, related tasks. By fine-tuning these models, we can achieve high performance with reduced computational cost and time. This project showcases the practical application of transfer learning in building an efficient and accurate face detection system, demonstrating its potential to significantly enhance various computer vision tasks.
+								</p>
+
+
+								<p></p>
+								<div class="buttons">
+									<button class="back" onclick="history.back()">Back</button>
+									<button class="next" onclick="window.location.href='olympic.html'">Next</button>
+								</div>
+								</section>
+								
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+				<header id="header1">
+					<a href="index.html" class="logo">Home</a>
+					
+				</header>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

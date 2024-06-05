@@ -2651,7 +2651,16 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+		
+		.round-border {
+			border: 5px solid #110b4e; /* Border width and color */
+			border-radius: 50%;     /* Make the border round */
+			padding: 5px;           /* Optional: add padding inside the border */
+			width: 200px;           /* Optional: set the width of the image */
+			height: 200px;          /* Optional: set the height of the image */
+			object-fit: cover;      /* Ensure the image covers the entire area */
+		}
+		
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
