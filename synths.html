@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a>MLTrading</a></li>
+							
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kasundewaka" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/kasun98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.facebook.com/kasun.dewaka.ii" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+                        <section class="post">
+                            <header class="major">
+                                <span class="date">June 13, 2024</span>
+                                <h1>ML Trading</h1>
+                                <p>Analyzing Deriv Broker's Synthetic Trading Indices Using Machine Learning Models</p><br>
+                                In this project, I analyzed the prices of Deriv broker's synthetic trading indices, specifically focusing on Boom 500, Boom 1000, Crash 500, and Crash 1000 prices. The dataset consisted of 60 features extracted from 10 synthetic charts on MetaTrader 5. I experimented with different data transformations and machine learning models to predict these target prices.
+                                <br>
+                                <a href="https://github.com/kasun98/synthetics" class="icon brands fa-github"><span class="label">GitHub</span></a>
+								<strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/synthetics" target="_blank">GitHub Repository</a></strong><br>
+								
+                            </header>
+                            
+                            <h2>Data Preparation and Feature Engineering</h2>
+                            <p>
+                                I started by extracting the price data for 10 synthetic charts from MetaTrader 5, resulting in a dataframe with 60 features. These features were analyzed for their correlation with the target synthetic indices: Boom 500, Boom 1000, Crash 500, and Crash 1000 prices.
+                            </p>
+                            <div class="image main"><img src="images/correlation_matrix.png" alt="B500" /></div>
+                            <p>Boom 500 (B500) chart pattern compared with Volatility 100 1s (V100 1s) index, Crash 1000 index and Crash 500 index</p>
+                            <div class="image main"><img src="images/synths1_b500.png" alt="B500" /></div>
+                            <div class="image main"><img src="images/synths2_b500.png" alt="B500" /></div>
+                            <p>Boom 1000 (B1000)</p>
+                            <div class="image main"><img src="images/synths3_b1000.png" alt="B500" /></div>
+                            <p>Crash 500 (C500)</p>
+                            <div class="image main"><img src="images/synths4_c500.png" alt="B500" /></div>
+                            <p>Crash 1000 (C1000)</p>
+                            <div class="image main"><img src="images/synths5_c1000.png" alt="B500" /></div>
+                            <h2>Machine Learning Experiments</h2>
+                            <p>
+                                To evaluate the performance of different models and data transformations, I conducted the following experiments:
+                                <ul>
+                                    <li><strong>Raw Data:</strong> Used the original price data without any scaling.</li>
+                                    <li><strong>Log Transformation:</strong> Applied natural logarithm to the price data.</li>
+                                    <li><strong>Sine Transformation:</strong> Converted the price data to sine values.</li>
+                                    <li><strong>Standard Scaling:</strong> Applied standard scaling to the price data.</li>
+                                </ul>
+                                For each experiment, I used XGBoost and k-Nearest Neighbors (KNN) models to predict the 'Is current market price good for a trade' (Binary classification). The performance was measured using accuracy and ROC-AUC scores.
+                            </p>
+                            
+                            <ul><li> For Boom500 index analysis, both XGBoost and KNN algoriths performed well with log price data</li></ul>
+                            <div class="image main"><img src="images/b500.png" alt="" /></div>
+                            <ul><li> For Boom1000 index analysis, XGBoost and KNN algoriths performed well with Standard scaled data and log price data respectively</li></ul>
+                            <div class="image main"><img src="images/b1000.png" alt="" /></div>
+                            <ul><li> For Crash500 index analysis, XGBoost and KNN algoriths performed well with Raw data and log price data respectively</li></ul>
+                            <div class="image main"><img src="images/c500.png" alt="" /></div>
+                            <ul><li> For Crash1000 index analysis, XGBoost and KNN algoriths performed well with Standard scaled data and log price data respectively</li></ul>
+                            <div class="image main"><img src="images/c1000.png" alt="" /></div>
+                            
+                            <h2>Results and Insights</h2>
+                            <p>
+                                The comparison charts above summarizes the performance of XGBoost and KNN models across different data transformations. Here are some key insights:
+                                <ul>
+                                    <li><strong>Raw Data:</strong> XGBoost and KNN models performed reasonably well with raw data.</li>
+                                    <li><strong>Log Transformation:</strong> Applying natural logarithm improved the performance of KNN significantly.</li>
+                                    <li><strong>Sine Transformation:</strong> Sine transformation resulted in lower performance compared to other transformations.</li>
+                                    <li><strong>Standard Scaling:</strong> Standard scaling provided a balanced performance for both models.</li>
+                                </ul>
+                            </p>
+                            
+                            <h2>Conclusion</h2>
+                            <p>
+                                This project demonstrates the impact of different data transformations on the performance of machine learning models in predicting synthetic trading insights. By experimenting with various approaches, I identified that log transformation and standard scaling can enhance the accuracy of predictions. These findings can be leveraged to develop more robust models for financial market analysis.
+                            </p>
+								<div class="buttons">
+									<button class="back" onclick="history.back()">Back</button>
+									<button class="next" onclick="window.location.href='st.html'">Next</button>
+								</div>
+								</section>
+								
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+				<header id="header1">
+					<a href="index.html" class="logo">Home</a>
+					
+				</header>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
