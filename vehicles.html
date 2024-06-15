@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a>TrafficGUI</a></li>
+							
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kasundewaka" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/kasun98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.facebook.com/kasun.dewaka.ii" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+                        <section class="post">
+                            <header class="major">
+                                <span class="date">June 17, 2024</span>
+                                <h1>Real-time Traffic Data</h1>
+                                <p>A Comprehensive Vehicle Traffic Flow Management System Using YOLOv8n</p>
+                                <p>
+                                    Managing vehicle traffic flow efficiently is crucial for urban planning and safety. In this project, I developed a real-time traffic data management system using YOLOv8 for object detection and tracking. The system processes video feeds to detect vehicles, estimate their speeds, and count them as they pass through predefined lines. This project showcases a robust approach to real-time traffic monitoring and data analysis.
+                                </p>
+                                <a href="https://github.com/kasun98/vehicles_trafficflow" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                                <strong><a style="color: rgb(55, 0, 255);" href="https://github.com/kasun98/vehicles_trafficflow" target="_blank">GitHub Repository</a></strong>
+                            </header>
+                            <video width=100% height=auto controls autoplay loop muted poster="poster.jpg">
+                                <source src="https://res.cloudinary.com/djw3z53pj/video/upload/v1718479685/lv_0_20240615230024_nzn626.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h2>The Concept</h2>
+                            <p>
+                                The vehicle traffic flow management system leverages the power of YOLOv8 for real-time vehicle detection and tracking. The system not only identifies different classes of vehicles but also estimates their speeds and counts them as they move through designated areas in the video feed. This approach provides valuable insights into traffic patterns and vehicle behavior.
+                            </p>
+                            <div class="image main"><img src="images/veh3.png" alt="" /></div>
+                            <h2>Model Development</h2>
+                            <p>
+                                The model was trained on a custom dataset to accurately detect and track vehicles and vehicle classes including Three-wheelers. Using a custom-trained YOLOv8 model, the system is optimized for recognizing various vehicle classes in different conditions. The integration of Ultralytics speed estimation algorithms and object counting techniques further enhances the functionality, making it a comprehensive solution for traffic data analysis.
+                            </p>
+                            <div class="image main"><img src="images/veh2.png" alt="" /></div>
+                            
+                            <div class="highlight">
+                                <h3>Development Stack</h3>
+                                <ul>
+                                    <li><strong>YOLOv8n:</strong> For vehicle detection and tracking.</li>
+                                    <li><strong>OpenCV:</strong> For video processing and frame handling.</li>
+                                    <li><strong>Roboflow:</strong> Dataset annotation and augmentation</li>
+                                    <li><strong>PyTorch:</strong> For model training and inference.</li>
+                                    <li><strong>Plotly and Matplotlib:</strong> For data visualization and interactive charts.</li>
+                                    <li><strong>tkinter:</strong> For creating a graphical user interface (GUI).</li>
+                                    
+                                </ul>
+                            </div>
+                            <h2>Performance and Results</h2>
+                            <p>
+                                The system has demonstrated high accuracy in vehicle detection and tracking, providing reliable traffic data in real-time. The integration of bar charts, line charts, and gauge charts within the GUI offers a comprehensive view of traffic patterns and vehicle speeds. This enables effective monitoring and decision-making for traffic management. (Results data are available on github repo)
+                            </p>
+                            <div class="image main"><img src="images/veh1.png" alt="" /></div>
+                            <h2>Limitations and Challenges</h2>
+                            <p>While the system performs well in controlled environments, it faces some limitations:</p>
+                            <ul>
+                                <li><strong>GPU Performance</strong></li>
+                                <li><strong>Video Quality:</strong> The accuracy of detection and tracking can be affected by low-quality video feeds.</li>
+                                <li><strong>Environmental Factors:</strong> Variations in lighting and weather conditions can impact performance.</li>
+                            </ul>
+                            <h2>Conclusion</h2>
+                            <p>
+                                This vehicle traffic flow management system showcases the potential of YOLOv8n in real-time traffic monitoring, data collection and data analysis. By providing accurate and actionable traffic data, it offers a valuable tool for urban planning and traffic management authorities. The user-friendly interface and comprehensive data visualization further enhance its practicality and usability.
+                            </p>
+                        
+                        
+								<div class="buttons">
+									<button class="back" onclick="history.back()">Back</button>
+									<button class="next" onclick="window.location.href='neuronbit.html'">Next</button>
+								</div>
+								</section>
+								
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+				<header id="header1">
+					<a href="index.html" class="logo">Home</a>
+					
+				</header>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
